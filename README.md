@@ -14,8 +14,8 @@ This project models an industrial climate monitoring framework engineered to saf
 * **Systems Engineering Mindset:** Designing an integrated system where hardware architecture feeds directly into software solutions.
 
 ## Live Assets & System Links
-* **Interactive Circuit Simulator:** [PASTE YOUR WOKWI URL HERE]
-* **Cloud Analytics Execution Script:** [PASTE YOUR GOOGLE COLAB URL HERE]
+* **Interactive Circuit Simulator:** [https://wokwi.com/projects/475859811328167937]
+* **Cloud Analytics Execution Script:** [https://colab.research.google.com/drive/1GBcP7zYmNdFHBF1zuY5Ae53dF2K2jZ0w?usp=sharing]
 
 ---
 
