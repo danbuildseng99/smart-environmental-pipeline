@@ -3,7 +3,7 @@
 A practical project exploring how data flows from physical hardware into software scripts for analysis.
 
 ## 💡 The Motivation
-In modern manufacturing, machines don't operate in a vacuum—they generate data that engineers use to check system health. I built this project to teach myself the fundamentals of data acquisition, linking an Arduino simulation to a Python script to see how raw readings turn into usable diagnostics.
+In modern manufacturing, machines don't operate in a vacuum, they generate data that engineers use to check system health. I built this project to teach myself the fundamentals of data acquisition, linking an Arduino simulation to a Python script to see how raw readings turn into usable diagnostics.
 
 ## 🛠️ How the System Works
 1. **The Hardware Layer (Wokwi):** A simulated Arduino Uno reads temperature and humidity data from a digital DHT22 sensor and formats the readings into clean text packages.
