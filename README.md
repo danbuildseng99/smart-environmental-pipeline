@@ -1,34 +1,35 @@
-# Smart Environmental Data Pipeline (Mechatronics Framework)
+# 📊 Smart Environmental Data Pipeline
 
-## Project Overview
-This project models an industrial climate monitoring framework engineered to safeguard temperature-sensitive electronics. It establishes an end-to-end data pipeline by pairing a simulated micro-controller network layer with a remote cloud data analytics suite to track thermal stability.
+A practical project exploring how data flows from physical hardware into software scripts for analysis.
 
-## Core Architectural Modules
-1. **The Edge Layer (Arduino Core):** A simulated Arduino Uno interfaces with a digital DHT22 atmospheric module. It samples data metrics, evaluates payload packages, and formats data frames for a serial data bus.
-2. **The Cloud Analytics Layer (Python Engine):** A custom Python data engineering block runs via cloud runtime to ingest raw text data streams, unpack parameters, extract critical structural statistics, and map out telemetry curves.
+## 💡 The Motivation
+In modern manufacturing, machines don't operate in a vacuum—they generate data that engineers use to check system health. I built this project to teach myself the fundamentals of data acquisition, linking an Arduino simulation to a Python script to see how raw readings turn into usable diagnostics.
 
-## Technical Skills Applied
-* **Embedded Hardware Architecture:** Virtual pin layout optimization and circuit wiring loops.
-* **C++ Programming:** Library dependency configuration (`DHTesp.h`), conditional event loops, and serial protocol output streams.
-* **Python Data Science:** String array slicing, algorithmic calculation loops, and structural plotting logic (`matplotlib`).
-* **Systems Engineering Mindset:** Designing an integrated system where hardware architecture feeds directly into software solutions.
+## 🛠️ How the System Works
+1. **The Hardware Layer (Wokwi):** A simulated Arduino Uno reads temperature and humidity data from a digital DHT22 sensor and formats the readings into clean text packages.
+2. **The Software Layer (Google Colab):** A Python script takes that raw data stream, splits the text, calculates average temperatures, and plots the results on a simple chart.
 
-## Live Assets & System Links
-* **Interactive Circuit Simulator:** [https://wokwi.com/projects/475859811328167937]
-* **Cloud Analytics Execution Script:** [https://colab.research.google.com/drive/1GBcP7zYmNdFHBF1zuY5Ae53dF2K2jZ0w?usp=sharing]
+## 🔗 Live Interactive Links
+* **Interactive Circuit Simulator:** [Launch the Wokwi Simulation](https://wokwi.com/projects/475859811328167937)
+* **Cloud Analytics Execution Script:** [Open the Google Colab Notebook](https://colab.research.google.com/drive/1GBcP7zYmNdFHBF1zuY5Ae53dF2K2jZ0w?usp=sharing)
+
+## 🧠 What I Learned & Practised
+* **Data Formatting**: Learned how to format raw inputs from sensors into simple strings (`Temperature,Humidity`) that other software can easily read.
+* **C++ Programming**: Managed sensor library dependencies, mapped pin layouts, and controlled data printing intervals.
+* **Python Data Handling**: Practised array parsing, mathematical calculation loops (like finding averages), and basic data plotting using `matplotlib`.
+* **System Integration**: Experienced the logic of building an end-to-end project where the software directly depends on the hardware output.
 
 ---
 
-### Sample Hardware Stream Data (Ingested)
+### 📥 Raw Hardware Data Example
 ```text
-24.0,40.0
 24.0,40.0
 24.0,40.0
 25.5,41.2
 27.8,43.5
 ```
 
-### Derived Pipeline Diagnostics Output
-* **Total System Data Packets Managed:** 15 Elements 
-* **Calculated Baseline Temperature Mean:** 24.58°C
-* **Peak Measured Thermal Disruption Spike:** 27.80°C
+### 📤 Python Script Output Example
+* **Total Packets Read:** 15 Elements 
+* **Average Temperature:** 24.58°C
+* **Highest Temperature Spike:** 27.80°C
